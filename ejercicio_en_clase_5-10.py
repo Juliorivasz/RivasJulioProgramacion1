@@ -37,21 +37,21 @@ Sólo se encriptarán las letras de los mensajes, dejando al resto de caracteres
 0. Por cada número, informar cuántos dígitos pares y cuántos impares tiene.
 Al finalizar, informar la cantidad de dígitos pares y de dígitos impares leídos en total.'''
 
-number = 1
-count_pair = 0
-count_odd = 0
+# number = 1
+# count_pair = 0
+# count_odd = 0
 
-while number > 0:
-    number = int(input("ingrese un numero entero positivo, si desea salir ingrese 0: "))
-    number_str= str(number)
-    for i in number_str: 
-        dig = int(i)
-        print(dig)
-        if dig%2 == 0:
-            count_pair+=1
-        else:
-            count_odd+=1
-print("numeros impares: ", count_odd)
-print("numeros pares: ", count_pair)
+# while number > 0:
+#     number = int(input("ingrese un numero entero positivo, si desea salir ingrese 0: "))
+#     number_str= str(number)
+#     for i in number_str: 
+#         dig = int(i)
+#         print(dig)
+#         if dig%2 == 0:
+#             count_pair+=1
+#         else:
+#             count_odd+=1
+# print("numeros impares: ", count_odd)
+# print("numeros pares: ", count_pair)
     
 
