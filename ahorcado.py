@@ -31,16 +31,24 @@ list_word = ["ARBOL", "CASAMIENTO", "PYTHON", "RUEDA", "MESA", "CAZAR", "CASAR",
 attempts = 10
 random_word = random.choice(list_word)
 phrase = ""
+message = ""
 
 while True:
+    characters = funciones.choiced_word(random_word,phrase)
+    print(f"la palabra es: {characters}")
+    if characters != random_word and attempts == 0:
+        message = "No te quedan mas intento, Perdiste JAJAJAJA"
+        break
+    elif characters == random_word and attempts > 0:
+        message = "Felicidades has adivinado la palabra!!"
+        break
     letter = input('Ingrese una "letra" para adivinar la palabra: ').upper()
+    if letter not in random_word and attempts > 0:
+        attempts -= 1
     if len(letter) > 1:
         print("Opcion no valida.")
         continue
-    phrase += letter
     print(f"Te quedan {attempts} intentos")
-    characters = funciones.choiced_word(random_word,phrase)
-    print(characters)
-    if attempts == 0 or characters == random_word:
-        break
+    phrase += letter
 
+print(message)

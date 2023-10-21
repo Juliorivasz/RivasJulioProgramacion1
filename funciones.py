@@ -21,4 +21,3 @@ def choiced_word(word,phrase):
         else:
             characters += "_"
     return characters
-
