@@ -16,7 +16,7 @@ lugar correspondiente.'''
 def choiced_word(word,phrase):
     characters = ""
     for i in word:
-        if i in phrase:
+        if i in phrase.lower():
             characters += i
         else:
             characters += "_"
