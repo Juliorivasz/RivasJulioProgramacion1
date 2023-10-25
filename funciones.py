@@ -21,3 +21,9 @@ def choiced_word(word,phrase):
         else:
             characters += "_"
     return characters
+
+# identificador de socios
+def create_id_partner(first_name, second_name, last_name, dni):
+    long_last_name= len(last_name)
+    id_partner = first_name+str(long_last_name)+dni[:3]
+    return id_partner
