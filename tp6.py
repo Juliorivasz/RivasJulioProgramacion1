@@ -8,4 +8,15 @@
 
 # for number in numbers_list:
 #     print(f"Estos son los numeros que guardaste: {number}")
-    
+
+
+'''2.	A continuación, solicitar al usuario que ingrese un número y, si el número está en la lista, eliminar su primera ocurrencia. Mostrar un mensaje si no es posible eliminar.'''
+# number_list = [4,8,3,5,23]
+# while True:
+#     number = int(input("Ingresa un numero: "))
+#     if number in number_list:
+#         number_list.remove(number)
+#         print(f"La primera ocurrencia del número {number} ha sido eliminada.")
+#         print("Lanueva lista es:", number_list)
+#     else:
+#         print(f"El número {number} no está en la lista. No se puede eliminar.")
